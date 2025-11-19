@@ -1,10 +1,11 @@
 .body{
-    background-color: red;
+    background-color: rgb(184, 184, 184);
     height: 800px;
     width: auto;
     display: flex;
     justify-content: center;    /*水平居中对齐*/
-    align-items: center;      /*垂直居中对齐*/             
+    align-items: center;       /*垂直居中对齐*/     
+            
 }
 
 
@@ -19,25 +20,181 @@
 /*PC端显示规则*/
 @media(min-width:1024px){      
     .div1{
-        background-color: blueviolet;
+        background-color: rgb(93, 73, 111);
+        width: 90%;
+        height: 90%;
+        box-shadow: 5px 5px 5px 2px rgb(138, 138, 138);border-radius: 10px;
+    }
+    .div-top{
+        background-color: blanchedalmond;
+        border-radius: 5px 5px 0px 0px ;
         width: 100%;
-        height: 100%;
+        height: 5%;
+    }
+    .div-body{
+        background-color: darkgray;
+        width: 100%;
+        height: 85%;
+    }
+    .left-msg{
+         background-color: rgb(100, 63, 63);
+         height: 14%;
+         width: 60%;
+         display: flex;
+    }
+    .header-picture{
+        background-color: brown;
+        flex: 0.5;
+        display: flex;
+    }
+    .profile-picture{
+        width: 80%;
+        height: 50%;
+        border-radius: 10px;
+        margin-top: 8px;
+
+      
+    }
+    .msg-and-time{
+        background-color: coral;
+        flex: 6;
+        flex-direction: column;
+        flex-wrap: wrap;
+     
+    }
+    .div-foot{
+        background-color: darkgreen;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        box-shadow: 0px -4px 3px 0px rgb(198, 198, 198);
+    }
+    .input{
+        width: 100%;
+        height: 80%;
+        border: none;
+        box-sizing: border-box;
+        padding: 5px;
+    }
+    .btn{
+        background-color: rgb(102, 102, 255);
+        border: none;
+        width: 5%;
+        height: 25%;
+        margin: 2%;
+        border-radius: 5px;
         
     }
-    .div2{
-        background-color: blanchedalmond;
-        width: ;
+    .btn:hover{
+        background-color: rgb(100, 100, 255);
+        box-shadow: 0px 2px 3px 0px rgb(148, 148, 148);
+        transition: all 0.2s;        /*效果延迟*/
     }
-    
 }
 
 /*手机端显示规则*/
 @media(max-width:767px){
     .div1{
-        background-color: brown;
-        width: 180px;
-        height: 320px;
+        background-color: rgb(184, 184, 184);
+        width: 378px;
+        height: 672px;
+        box-shadow: 5px 5px 5px 2px rgb(138, 138, 138);border-radius: 10px;
     }
-    
+    .div-top{
+        background-color: chocolate;
+        border-radius: 10px 10px 0px 0px;
+        font-size: larger;
+        font-weight: 500px;
+        width: 100%;
+        height: 5%;
+    }
 
+    /*聊天主体的css设计*/
+     .div-body{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 80%;
+    }
+
+    /*左边的消息*/
+    .left-msg{
+        background-color: dimgray;
+        height: 14%;
+        width: 60%;
+        display: flex;
+      
+        
+        
+    }
+    .header-picture{
+        background-color: crimson;
+        flex: 1;
+    }
+    .profile-picture{
+        width: 80%;
+        border-radius: 10px;
+        margin-top: 8px;
+
+      
+    }
+    .msg-and-time{
+        background-color: coral;
+        flex: 3;
+        flex-direction: column;
+        flex-wrap: wrap;
+     
+    }
+    .msg-time{
+        background-color: aquamarine;
+    }
+    .msg{
+        display: inline-flex;
+        margin-top: 2px;
+        
+        background-color: rgb(96, 40, 133);
+       
+    }
+
+
+    /*右边的消息*/
+
+
+
+
+    .div-foot{
+        background-color: rgb(255, 255, 255);
+        border-radius: 0px 0px 10px 10px;
+        width: 100%;
+        height: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        box-shadow: 0px -4px 3px 0px rgb(198, 198, 198);
+        
+      
+        
+    }
+    .input{
+        width: 100%;
+        height: 60%;
+        box-sizing: border-box;
+        border: none;           /*去除输入框边框*/
+        padding: 5px;          
+    }
+    .btn{
+        background-color: rgb(102, 102, 255);
+        border: none;
+        width: 15%;
+        height: 25%;
+        margin: 2%;
+        border-radius: 5px;
+        
+    }
+    .btn:hover{
+        background-color: rgb(100, 100, 255);
+        box-shadow: 0px 2px 3px 0px rgb(148, 148, 148);
+        transition: all 0.2s;        /*效果延迟*/
+    }
 }
