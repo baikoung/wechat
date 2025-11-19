@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         rightMsgDiv.innerHTML = `
             <div class="header-picture-r">
-                <img class="profile-picture-r" src="/profile picture/wechat-header.webp" alt="头像">
+                <img class="profile-picture-r" src="./profile picture/wechat-header.webp" alt="头像">
             </div>
             <div class="msg-and-time-r">
                 <div class="msg-time">${messageTime}</div>
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         leftMsgDiv.innerHTML = `
             <div class="header-picture-l">
-                <img class="profile-picture-l" src="/profile picture/wechat-default2.0.png" alt="对方头像">
+                <img class="profile-picture-l" src="./profile picture/wechat-default2.0.png" alt="对方头像">
             </div>
             <div class="msg-and-time-l">
                 <div class="msg-time">${messageTime}</div>
@@ -152,4 +152,5 @@ document.addEventListener('DOMContentLoaded', function() {
     messageInput.focus();
     
     console.log('微信聊天界面JavaScript加载完成');
+
 });
